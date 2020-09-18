@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.title{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-main{
+    color: #fff;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px ;
+}
+.btn{
+    border-radius:15px ;
+    text-transform: uppercase;
+   font-weight: bold;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color:  #428BCA;
+}
+.btn-primary{
+    transition: 0.4s;
+    background-color: #428BCA;
+    border: 1px solid #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#ecf0f1 ;
+    
+}
+.content{
+    background-color:#fff;
+    border-radius: 15px ;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: #428BCA;
+}
+.first-column{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 1;
+
+}
+.second-column{
+    flex: 2 0 auto;
+
+}
+.first-content{
+    display: flex;
+    position: relative;
+}
+.list-social{
+    display: flex;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+.second-content{
+    position: absolute;
+    display: none;
+
+}
