@@ -6,7 +6,9 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
+
 .title{
     font-size: 28px;
     font-weight: bold;
@@ -42,6 +44,7 @@ body{
     width: 150px;
     align-self:center ;
     border-width: 0px;
+    outline: none;
 }
 .btn-primary:hover{
     background-color: #fff;
@@ -79,6 +82,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin: 20px;
     
 }
 .content::before{
@@ -89,8 +93,6 @@ body{
     background-color: #428BCA;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
-    left: 60%;
 }
 .first-column{
     text-align: center;
@@ -98,6 +100,7 @@ body{
     z-index: 10;
 
 }
+
 .second-column{
     
     flex: 2 0 auto;
@@ -108,7 +111,6 @@ body{
 }
 .first-content{
     display: flex;
-    display: none;
     
 }
 
@@ -147,7 +149,6 @@ body{
     display:flex;
     flex-direction: column;
     width: 55%;
-    text-align: center;
 }
 .form input{
     height: 45px;
@@ -155,33 +156,39 @@ body{
     border: none;
     background-color: #ecf0f1;
    
-  
 }
 .label-input{
     background-color: #ecf0f1;
     display: flex;
     align-items: center;
     margin: 8px;
+    
+}
+.label-input input{
+    outline: none;
 }
 .icon-modify{
     color: #7f8c8d;
-    padding: 0 10px;
+    padding: 0 20px;
+    
 }
 
-/*Segundo content da tela de login */
 
-.second-content{
-    position: absolute;
-    display: flex;
-}
-.second-content .first-column{
-    order: 2;
-}
-.second-content .second-column{
-    order: 1;
-}
-.password{
-    color: #34495e;
-    font-size:14px ;
-    margin-top: 5px;
+/* Mobile*/
+@media (max-width:750px){
+    .content{
+        margin: 20px;
+    }
+    .content::before{
+        display: none;
+    }
+    .first-column{
+        display: none;
+    }
+    .second-column{
+       
+        
+    }
+
+
 }
