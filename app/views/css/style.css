@@ -21,9 +21,14 @@ body{
     color:  #428BCA;
 }
 .description{
+    text-align: center;
     font-size: 14px;
     font-weight: 300;
     line-height: 30px ;
+}
+.description a{
+    text-decoration: none;
+    color: #428BCA;
 }
 .description-main{
     color: #fff;
@@ -169,8 +174,10 @@ body{
 }
 .icon-modify{
     color: #7f8c8d;
-    padding: 0 20px;
-    
+    padding: 0 5px;   
+}
+.icon-login{
+    padding: 0 10px;
 }
 
 
@@ -185,10 +192,7 @@ body{
     .first-column{
         display: none;
     }
-    .second-column{
-       
-        
-    }
+   
 
 
 }

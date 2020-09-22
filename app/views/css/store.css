@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header{
+    width: 100%;
+    background-color: #f3f1f1;
+    padding: 10px 0px ;
+    top: 0;
+    z-index: 999;
+}
+.navbar{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+}
+.logo-info{
+   width: 160px;
+   height: 41px;
+}
+.icon-carrinho{
+    display: flex;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+    
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #428BCA;
+    font-size: 15px;  
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s ease;
+
+}
+ul li a:hover{
+    color: #eb7e4b;
+}
+.hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    display: none;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.container{
+    display: flex;
+}
+.content{
+    
+    width: 960px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-column{
+    width: 50%;
+    flex: 2 0 auto;
+
+}
+.second-column{
+    
+    width: 50%;
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.title{
+    color: #428BCA;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+.title-second{
+    color: #a0a0a0;
+    font-family: 'Poppins', sans-serif;
+}
+.title-text{
+    font-family: 'Poppins', sans-serif;
+    color: #bebebe;
+    text-align: center;
+    padding: 10px 40px;
+}
+.title-curso{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.search{
+    display: flex;
+   
+    justify-content: center;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+   
+}
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    
+}
+.label-input input{
+    outline: none;
+}
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 5px;   
+}
+.icon-login{
+    padding: 0 10px;
+}
+.content-body{
+   width: 960px;
+    margin: 0 auto;
+}
+.curso-section{
+    
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+.box-section{
+    text-align: center;
+    width: 30%;
+    
+    margin: 5px 5px;
+    padding: 10px 10px;
+    
+}
+.btn-search{
+    border-radius:7px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #428BCA;
+    color: #fff;
+    border: 1px solid #428BCA;
+    font-size: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    align-self:center ;
+    border-width: 0px;
+    outline: none;
+}
+.btn{
+    border-radius:15px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #428BCA;
+    color: #fff;
+    border: 1px solid #428BCA;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    align-self:center ;
+    border-width: 0px;
+    outline: none;
+}
+.btn:hover{
+    background-color: #fff;
+    border: 1px solid #428BCA;
+    color: #428BCA;
+}
+.btn-search:hover{
+    background-color: #fff;
+    border: 1px solid #428BCA;
+    color: #428BCA;
+}
+
+
+@media (max-width:970px){
+    .content-body{
+        width: auto;
+    }
+    .box-section{
+        width: 30%;
+        margin:10px auto ;
+    }
+}
+@media (max-width:875px){
+    .first-column{
+        display: none;
+        
+    }
+    .content-body{
+        width: auto;
+    }
+    
+    .box-section{
+        margin: 10px auto;
+    }
+    .second-column{
+        width: 100%;
+
+    }
+    .logo-info{
+        display: none;
+    }
+}
+
+@media (max-width:680px){
+    .box-section{
+        width: 40%;
+    }
+}
+@media (max-width: 550px){
+    .curso-section{
+        display: block;
+    }
+    .box-section{
+        width: 90%;
+    }
+}
